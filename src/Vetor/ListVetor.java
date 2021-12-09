@@ -13,19 +13,21 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-public class ListInfo {
-	private List<Info> lista = new ArrayList<Info>();
+import user.User;
 
-	public List<Info> getLista() {
+public class ListVetor {
+	private List<Vetor> lista = new ArrayList<Vetor>();
+
+	public List<Vetor> getLista() {
 		return lista;
 	}
 
-	public void setLista(List<Info> lista) {
+	public void setLista(List<Vetor> lista) {
 		if (lista != null)
 			this.lista = lista;
 	}
-	public void add(Info info) {
-		lista.add(info);
+	public void add(Vetor vetor) {
+		lista.add(vetor);
 	}
 
 	
@@ -34,7 +36,7 @@ public class ListInfo {
 	    Gson gson = builder.create();
 	    FileWriter writer;
 		try {
-			writer = new FileWriter("json/infos.json");
+			writer = new FileWriter("json/vetores.json");
 			writer.write(gson.toJson(lista));
 		    writer.close();
 		} catch (IOException e) {
@@ -42,16 +44,16 @@ public class ListInfo {
 		}
 	}
 	
-	public List<Info> ler() {
+	public List<Vetor> ler() {
 	    BufferedReader bufferedReader = null;
 		try {
 			bufferedReader = new BufferedReader(
-							 new FileReader("json/infos.json"));
+							 new FileReader("json/vetores.json"));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-	    Type listType = new TypeToken<ArrayList<Info>>(){}.getType();
-	    lista = new ArrayList<Info>();
+	    Type listType = new TypeToken<ArrayList<Vetor>>(){}.getType();
+	    lista = new ArrayList<Vetor>();
 	    lista = new Gson().fromJson(bufferedReader, listType);
 	    return lista;
 	}
