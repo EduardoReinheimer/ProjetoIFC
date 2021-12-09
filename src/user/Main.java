@@ -3,15 +3,14 @@ package user;
 import java.util.ArrayList;
 import java.util.List;
 
-import info.Info;
-import info.ListInfo;
+import Vetor.Info;
 
 public class Main {
 
 	public static void main(String[] args) {
 		List<User> usuarios = new ArrayList<User>();
 		
-		Endereco e = new Endereco(1, "Rua Coorea Pinto", 89, "kt02");
+		Endereco e = new Endereco("Rua Corea Pinto", 89, "kt02");
 		User u = new User(1, "ademir", "999999", e);
 		
 		ListUser li = new ListUser();

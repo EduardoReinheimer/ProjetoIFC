@@ -1,4 +1,4 @@
-package info;
+package Vetor;
 
 public class Info {
 	private int id;

@@ -1,54 +1,48 @@
 package user;
 
 public class Endereco {
-	private int user_id;
 	private String rua;
 	private int numero;
-
 	private String complemento;
 
-	private int getUser_id() {
-		return user_id;
-	}
-
-	private void setUser_id(int user_id) {
-		if (user_id > 0)
-			this.user_id = user_id;
-	}
-
-	private String getRua() {
+	public String getRua() {
 		return rua;
 	}
 
-	private void setRua(String rua) {
+	public void setRua(String rua) {
 		if (rua != null)
 			this.rua = rua;
 	}
 
-	private int getNumero() {
+	public int getNumero() {
 		return numero;
 	}
 
-	private void setNumero(int numero) {
+	public void setNumero(int numero) {
 		if (numero > 0)
 			this.numero = numero;
 	}
 
-	private String getComplemento() {
+	public String getComplemento() {
 		return complemento;
 	}
 
-	private void setComplemento(String complemento) {
+	public void setComplemento(String complemento) {
 		if (complemento != null)
 			this.complemento = complemento;
+	}
+
+	public Endereco(String rua, int numero, String complemento) {
+		super();
+		setRua(rua);
+		setNumero(numero);
+		setComplemento(complemento);
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Endereco [user_id=");
-		builder.append(user_id);
-		builder.append(", rua=");
+		builder.append("Endereco [rua=");
 		builder.append(rua);
 		builder.append(", numero=");
 		builder.append(numero);
@@ -56,14 +50,6 @@ public class Endereco {
 		builder.append(complemento);
 		builder.append("]");
 		return builder.toString();
-	}
-
-	public Endereco(int user_id, String rua, int numero, String complemento) {
-		super();
-		setUser_id(user_id);
-		setRua(rua);
-		setNumero(numero);
-		setComplemento(complemento);
 	}
 
 }

@@ -1,1 +1,12 @@
-[{"id":1,"username":"ademir","password":"999999","endereco":{"user_id":1,"rua":"Rua Coorea Pinto","numero":89,"complemento":"kt02"}}]
+[
+    {
+        "id": 1,
+        "username": "ademir",
+        "password": "999999",
+        "endereco": {
+            "rua": "Rua Corea Pinto",
+            "numero": 89,
+            "complemento": "kt02"
+        }
+    }
+]

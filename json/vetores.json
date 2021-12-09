@@ -1,1 +1,23 @@
-[{"id":1,"title":"Vetor1","itens":"1;2;3","valores":[{"info_id":1,"vetor_id":1,"valor":23.0},{"info_id":2,"vetor_id":1,"valor":25.0}]}]
+[
+    {
+        "id": 1,
+        "title": "Vetor1",
+        "itens": "1;2;3",
+        "valores": [
+            {
+                "info": {
+                    "id": 1,
+                    "descricao": "MEDIA"
+                },
+                "valor": 23.0
+            },
+            {
+                "info": {
+                    "id": 2,
+                    "descricao": "MODA"
+                },
+                "valor": 25.0
+            }
+        ]
+    }
+]

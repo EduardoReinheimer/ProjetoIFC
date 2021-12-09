@@ -6,8 +6,11 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		Valor v1 = new Valor(1, 1, 23.0);
-		Valor v2 = new Valor(2, 1, 25.0);
+		Info media = new Info(1, "MEDIA");
+		Info moda = new Info(2, "MODA");
+		
+		Valor v1 = new Valor(media, 23.0);
+		Valor v2 = new Valor(moda, 25.0);
 		
 		ArrayList<Valor> valores = new ArrayList<Valor>();
 		valores.add(v1);

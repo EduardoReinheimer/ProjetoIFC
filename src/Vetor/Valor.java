@@ -1,50 +1,37 @@
 package Vetor;
 
 public class Valor {
-	private int info_id;
-	private int vetor_id;
+	private Info info;
 	private double valor;
 
-	private int getInfo_id() {
-		return info_id;
+	public Info getInfo() {
+		return info;
 	}
 
-	private void setInfo_id(int info_id) {
-		if (info_id > 0)
-			this.info_id = info_id;
+	public void setInfo(Info info) {
+		if (info != null)
+			this.info = info;
 	}
 
-	private int getVetor_id() {
-		return vetor_id;
-	}
-
-	private void setVetor_id(int vetor_id) {
-		if (vetor_id > 0)
-			this.vetor_id = vetor_id;
-	}
-
-	private double getValor() {
+	public double getValor() {
 		return valor;
 	}
 
-	private void setValor(double valor) {
+	public void setValor(double valor) {
 		if (valor > 0)
 			this.valor = valor;
 	}
 
-	public Valor(int info_id, int vetor_id, double valor) {
-		setInfo_id(info_id);
-		setVetor_id(vetor_id);
+	public Valor(Info info, double valor) {
+		setInfo(info);
 		setValor(valor);
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Valor [info_id=");
-		builder.append(info_id);
-		builder.append(", vetor_id=");
-		builder.append(vetor_id);
+		builder.append("Valor [info=");
+		builder.append(info);
 		builder.append(", valor=");
 		builder.append(valor);
 		builder.append("]");

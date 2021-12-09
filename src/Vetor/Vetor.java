@@ -8,38 +8,38 @@ public class Vetor {
 	private String itens;
 	private ArrayList<Valor> valores;
 
-	private int getId() {
+	public int getId() {
 		return id;
 	}
 
-	private void setId(int id) {
+	public void setId(int id) {
 		if (id > 0)
 			this.id = id;
 	}
 
-	private String getTitle() {
+	public String getTitle() {
 		return title;
 	}
 
-	private void setTitle(String title) {
+	public void setTitle(String title) {
 		if (title != null)
 			this.title = title;
 	}
 
-	private String getItens() {
+	public String getItens() {
 		return itens;
 	}
 
-	private void setItens(String itens) {
+	public void setItens(String itens) {
 		if (itens != null)
 			this.itens = itens;
 	}
 
-	private ArrayList<Valor> getValores() {
+	public ArrayList<Valor> getValores() {
 		return valores;
 	}
 
-	private void setValores(ArrayList<Valor> valores) {
+	public void setValores(ArrayList<Valor> valores) {
 		if (valores != null)
 			this.valores = valores;
 	}

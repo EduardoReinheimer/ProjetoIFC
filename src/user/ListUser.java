@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-import info.Info;
+import Vetor.Info;
 
 public class ListUser {
 	private List<User> lista = new ArrayList<User>();

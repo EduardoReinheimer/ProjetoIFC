@@ -6,38 +6,38 @@ public class User {
 	private String password;
 	private Endereco endereco;
 
-	private int getId() {
+	public int getId() {
 		return id;
 	}
 
-	private void setId(int id) {
+	public void setId(int id) {
 		if (id > 0)
 			this.id = id;
 	}
 
-	private String getUsername() {
+	public String getUsername() {
 		return username;
 	}
 
-	private void setUsername(String username) {
+	public void setUsername(String username) {
 		if (username != null)
 			this.username = username;
 	}
 
-	private String getPassword() {
+	public String getPassword() {
 		return password;
 	}
 
-	private void setPassword(String password) {
+	public void setPassword(String password) {
 		if (password != null)
 			this.password = password;
 	}
 
-	private Endereco getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
 
-	private void setEndereco(Endereco endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 
